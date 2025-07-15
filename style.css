@@ -1,30 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  background-color: #ffe6f0;
+  margin: 20px;
+  padding: 0;
   text-align: center;
 }
 
-.semestre {
-  margin: 20px;
+h1 {
+  color: #c2185b;
 }
 
-.materia {
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ramo {
   width: 200px;
-  margin: 10px auto;
-  background: white;
-  padding: 10px;
+  height: auto;
+  background-color: #f8bbd0;
+  border: 2px solid #c2185b;
   border-radius: 10px;
-  border: 2px solid #ccc;
+  padding: 10px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  white-space: normal;
+  text-align: center;
 }
 
-.materia.aprobada {
-  background: #c8e6c9;
-  border-color: #388e3c;
+.ramo:hover {
+  background-color: #f48fb1;
 }
 
-.nota {
-  width: 60px;
-  margin-top: 5px;
+.ramo.aprobado {
+  background-color: #c2185b;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: #fce4ec;
+  border-color: #e91e63;
+  color: #999;
+  cursor: not-allowed;
 }
