@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.semestre {
+  margin: 20px;
+}
+
+.materia {
+  width: 200px;
+  margin: 10px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.materia.aprobada {
+  background: #c8e6c9;
+  border-color: #388e3c;
+}
+
+.nota {
+  width: 60px;
+  margin-top: 5px;
+}
